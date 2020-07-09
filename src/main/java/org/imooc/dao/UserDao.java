@@ -12,4 +12,11 @@ public interface UserDao {
 	 * @return 用户列表
 	 */
 	List<User> select(User user);
+
+	/**
+	 * 根据主键删除
+	 * @param id 主键
+	 * @return 影响行数
+	 */
+	int delete(Long id);
 }
