@@ -6,8 +6,9 @@
 		<setting name="useGeneratedKeys" value="true"/>
 		<setting name="mapUnderscoreToCamelCase" value="true"/>
 	</settings>
-	
+	<!-- 
 	<plugins>
 		<plugin interceptor="org.imooc.dao.interceptor.PageInterceptor"/>
 	</plugins>
+	 -->
 </configuration>
