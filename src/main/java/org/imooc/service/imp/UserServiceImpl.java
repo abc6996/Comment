@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	@Transactional(readOnly = true)
 	public List<User> getList() {
-		userDao.delete(1l);
+		// userDao.delete(1l);
 		return userDao.select(null);
 	}
 

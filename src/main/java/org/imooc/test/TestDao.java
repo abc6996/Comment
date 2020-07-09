@@ -16,6 +16,7 @@ public class TestDao {
 //		UserDao userDao = context.getBean(UserDao.class);
 		UserService userService = context.getBean(UserService.class);
 		List<User> list = userService.getList();
+		System.out.println("=============================");
 		System.out.println(list);
 	}
 }
