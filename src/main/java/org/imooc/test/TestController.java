@@ -29,10 +29,11 @@ public class TestController {
 
 	@Test
 	public void testGetAll() throws Exception {
-		MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/allUser")).andReturn();
-		Object object = result.getRequest().getAttribute("list");
-		System.out.println("***********************************");
-		System.out.println(object);
+//		MvcResult result = mockMvc.perform(MockMvcRequestBuilders.get("/api/submitComment")).andReturn();
+		MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post("/api/submitComment")).andReturn();
+//		Object object = result.getRequest().getAttribute("value");
+//		System.out.println("***********************************");
+//		System.out.println(object);
 	}
 
 }
